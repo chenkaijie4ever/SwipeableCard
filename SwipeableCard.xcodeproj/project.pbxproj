@@ -1,0 +1,471 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1BF2FCD32050E0B000BA552B /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1BF2FCC92050E0B000BA552B /* AppDelegate.m */; };
+		1BF2FCD42050E0B000BA552B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1BF2FCCA2050E0B000BA552B /* Assets.xcassets */; };
+		1BF2FCD52050E0B000BA552B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1BF2FCCB2050E0B000BA552B /* LaunchScreen.storyboard */; };
+		1BF2FCD62050E0B000BA552B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1BF2FCCD2050E0B000BA552B /* Main.storyboard */; };
+		1BF2FCD72050E0B000BA552B /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 1BF2FCCF2050E0B000BA552B /* Info.plist */; };
+		1BF2FCD82050E0B000BA552B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 1BF2FCD02050E0B000BA552B /* main.m */; };
+		1BF2FCE92050E33200BA552B /* image_1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 1BF2FCDB2050E33100BA552B /* image_1.jpg */; };
+		1BF2FCEA2050E33200BA552B /* image_6.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 1BF2FCDC2050E33100BA552B /* image_6.jpg */; };
+		1BF2FCEB2050E33200BA552B /* image_8.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 1BF2FCDD2050E33100BA552B /* image_8.jpg */; };
+		1BF2FCEC2050E33200BA552B /* image_9.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 1BF2FCDE2050E33200BA552B /* image_9.jpg */; };
+		1BF2FCED2050E33200BA552B /* like_btn@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 1BF2FCDF2050E33200BA552B /* like_btn@3x.png */; };
+		1BF2FCEE2050E33200BA552B /* image_3.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 1BF2FCE02050E33200BA552B /* image_3.jpg */; };
+		1BF2FCEF2050E33200BA552B /* like_postmark@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 1BF2FCE12050E33200BA552B /* like_postmark@3x.png */; };
+		1BF2FCF12050E33200BA552B /* image_5.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 1BF2FCE32050E33200BA552B /* image_5.jpg */; };
+		1BF2FCF22050E33200BA552B /* image_4.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 1BF2FCE42050E33200BA552B /* image_4.jpg */; };
+		1BF2FCF32050E33200BA552B /* dislike_btn@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 1BF2FCE52050E33200BA552B /* dislike_btn@3x.png */; };
+		1BF2FCF42050E33200BA552B /* image_7.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 1BF2FCE62050E33200BA552B /* image_7.jpg */; };
+		1BF2FCF52050E33200BA552B /* image_2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 1BF2FCE72050E33200BA552B /* image_2.jpg */; };
+		1BF2FCF62050E33200BA552B /* dislike_postmark@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 1BF2FCE82050E33200BA552B /* dislike_postmark@3x.png */; };
+		1BF2FCFB2050E39900BA552B /* DemoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1BF2FCFA2050E39900BA552B /* DemoViewController.m */; };
+		1BF2FD0620511CA600BA552B /* CKJSwipeableCardView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1BF2FD0520511CA600BA552B /* CKJSwipeableCardView.m */; };
+		1BF2FD0920511CBC00BA552B /* CKJSwipeableCardViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 1BF2FD0820511CBC00BA552B /* CKJSwipeableCardViewCell.m */; };
+		1BF2FD0C20511CD600BA552B /* CKJSwipeableCardViewLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 1BF2FD0B20511CD600BA552B /* CKJSwipeableCardViewLayout.m */; };
+		1BF2FD1620511D6800BA552B /* SimpleModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 1BF2FD1520511D6800BA552B /* SimpleModel.m */; };
+		1BF2FD1920511D7700BA552B /* SimpleCardViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 1BF2FD1820511D7700BA552B /* SimpleCardViewCell.m */; };
+		1BF2FD2820512EDC00BA552B /* image_0.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 1BF2FD2720512EDC00BA552B /* image_0.jpg */; };
+		1BF2FD2C2051320400BA552B /* Reachability.m in Sources */ = {isa = PBXBuildFile; fileRef = 1BF2FD2B2051320300BA552B /* Reachability.m */; };
+		1BF2FD2F2051327000BA552B /* FFNetworkReachability.m in Sources */ = {isa = PBXBuildFile; fileRef = 1BF2FD2E2051326F00BA552B /* FFNetworkReachability.m */; };
+		1BF2FD3A2051592C00BA552B /* UIView+Convenience.m in Sources */ = {isa = PBXBuildFile; fileRef = 1BF2FD382051592B00BA552B /* UIView+Convenience.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		1BF2FCAE2050E08200BA552B /* SwipeableCard.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwipeableCard.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		1BF2FCC82050E0B000BA552B /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		1BF2FCC92050E0B000BA552B /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		1BF2FCCA2050E0B000BA552B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		1BF2FCCC2050E0B000BA552B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		1BF2FCCE2050E0B000BA552B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		1BF2FCCF2050E0B000BA552B /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1BF2FCD02050E0B000BA552B /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		1BF2FCDB2050E33100BA552B /* image_1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = image_1.jpg; sourceTree = "<group>"; };
+		1BF2FCDC2050E33100BA552B /* image_6.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = image_6.jpg; sourceTree = "<group>"; };
+		1BF2FCDD2050E33100BA552B /* image_8.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = image_8.jpg; sourceTree = "<group>"; };
+		1BF2FCDE2050E33200BA552B /* image_9.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = image_9.jpg; sourceTree = "<group>"; };
+		1BF2FCDF2050E33200BA552B /* like_btn@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "like_btn@3x.png"; sourceTree = "<group>"; };
+		1BF2FCE02050E33200BA552B /* image_3.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = image_3.jpg; sourceTree = "<group>"; };
+		1BF2FCE12050E33200BA552B /* like_postmark@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "like_postmark@3x.png"; sourceTree = "<group>"; };
+		1BF2FCE32050E33200BA552B /* image_5.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = image_5.jpg; sourceTree = "<group>"; };
+		1BF2FCE42050E33200BA552B /* image_4.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = image_4.jpg; sourceTree = "<group>"; };
+		1BF2FCE52050E33200BA552B /* dislike_btn@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "dislike_btn@3x.png"; sourceTree = "<group>"; };
+		1BF2FCE62050E33200BA552B /* image_7.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = image_7.jpg; sourceTree = "<group>"; };
+		1BF2FCE72050E33200BA552B /* image_2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = image_2.jpg; sourceTree = "<group>"; };
+		1BF2FCE82050E33200BA552B /* dislike_postmark@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "dislike_postmark@3x.png"; sourceTree = "<group>"; };
+		1BF2FCF92050E39900BA552B /* DemoViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DemoViewController.h; sourceTree = "<group>"; };
+		1BF2FCFA2050E39900BA552B /* DemoViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DemoViewController.m; sourceTree = "<group>"; };
+		1BF2FD0420511CA600BA552B /* CKJSwipeableCardView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CKJSwipeableCardView.h; sourceTree = "<group>"; };
+		1BF2FD0520511CA600BA552B /* CKJSwipeableCardView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CKJSwipeableCardView.m; sourceTree = "<group>"; };
+		1BF2FD0720511CBC00BA552B /* CKJSwipeableCardViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CKJSwipeableCardViewCell.h; sourceTree = "<group>"; };
+		1BF2FD0820511CBC00BA552B /* CKJSwipeableCardViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CKJSwipeableCardViewCell.m; sourceTree = "<group>"; };
+		1BF2FD0A20511CD600BA552B /* CKJSwipeableCardViewLayout.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CKJSwipeableCardViewLayout.h; sourceTree = "<group>"; };
+		1BF2FD0B20511CD600BA552B /* CKJSwipeableCardViewLayout.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CKJSwipeableCardViewLayout.m; sourceTree = "<group>"; };
+		1BF2FD0D20511CEC00BA552B /* CKJSwipeableCardViewDefine.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CKJSwipeableCardViewDefine.h; sourceTree = "<group>"; };
+		1BF2FD1420511D6800BA552B /* SimpleModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SimpleModel.h; sourceTree = "<group>"; };
+		1BF2FD1520511D6800BA552B /* SimpleModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SimpleModel.m; sourceTree = "<group>"; };
+		1BF2FD1720511D7700BA552B /* SimpleCardViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SimpleCardViewCell.h; sourceTree = "<group>"; };
+		1BF2FD1820511D7700BA552B /* SimpleCardViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SimpleCardViewCell.m; sourceTree = "<group>"; };
+		1BF2FD2720512EDC00BA552B /* image_0.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = image_0.jpg; sourceTree = "<group>"; };
+		1BF2FD2A2051320300BA552B /* Reachability.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Reachability.h; sourceTree = "<group>"; };
+		1BF2FD2B2051320300BA552B /* Reachability.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Reachability.m; sourceTree = "<group>"; };
+		1BF2FD2D2051326F00BA552B /* FFNetworkReachability.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FFNetworkReachability.h; sourceTree = "<group>"; };
+		1BF2FD2E2051326F00BA552B /* FFNetworkReachability.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FFNetworkReachability.m; sourceTree = "<group>"; };
+		1BF2FD382051592B00BA552B /* UIView+Convenience.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Convenience.m"; sourceTree = "<group>"; };
+		1BF2FD392051592C00BA552B /* UIView+Convenience.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Convenience.h"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		1BF2FCAB2050E08200BA552B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1BF2FCA52050E08200BA552B = {
+			isa = PBXGroup;
+			children = (
+				1BF2FCF72050E37600BA552B /* SwipeableCard */,
+				1BF2FCC72050E0B000BA552B /* SwipeableCardDemo */,
+				1BF2FCAF2050E08200BA552B /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		1BF2FCAF2050E08200BA552B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				1BF2FCAE2050E08200BA552B /* SwipeableCard.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		1BF2FCC72050E0B000BA552B /* SwipeableCardDemo */ = {
+			isa = PBXGroup;
+			children = (
+				1BF2FCF82050E38900BA552B /* Demo */,
+				1BF2FCDA2050E1BF00BA552B /* Resource */,
+				1BF2FCC82050E0B000BA552B /* AppDelegate.h */,
+				1BF2FCC92050E0B000BA552B /* AppDelegate.m */,
+				1BF2FCCA2050E0B000BA552B /* Assets.xcassets */,
+				1BF2FCCB2050E0B000BA552B /* LaunchScreen.storyboard */,
+				1BF2FCCD2050E0B000BA552B /* Main.storyboard */,
+				1BF2FCCF2050E0B000BA552B /* Info.plist */,
+				1BF2FCD02050E0B000BA552B /* main.m */,
+			);
+			path = SwipeableCardDemo;
+			sourceTree = "<group>";
+		};
+		1BF2FCDA2050E1BF00BA552B /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+				1BF2FCE52050E33200BA552B /* dislike_btn@3x.png */,
+				1BF2FCE82050E33200BA552B /* dislike_postmark@3x.png */,
+				1BF2FD2720512EDC00BA552B /* image_0.jpg */,
+				1BF2FCDB2050E33100BA552B /* image_1.jpg */,
+				1BF2FCE72050E33200BA552B /* image_2.jpg */,
+				1BF2FCE02050E33200BA552B /* image_3.jpg */,
+				1BF2FCE42050E33200BA552B /* image_4.jpg */,
+				1BF2FCE32050E33200BA552B /* image_5.jpg */,
+				1BF2FCDC2050E33100BA552B /* image_6.jpg */,
+				1BF2FCE62050E33200BA552B /* image_7.jpg */,
+				1BF2FCDD2050E33100BA552B /* image_8.jpg */,
+				1BF2FCDE2050E33200BA552B /* image_9.jpg */,
+				1BF2FCDF2050E33200BA552B /* like_btn@3x.png */,
+				1BF2FCE12050E33200BA552B /* like_postmark@3x.png */,
+			);
+			path = Resource;
+			sourceTree = "<group>";
+		};
+		1BF2FCF72050E37600BA552B /* SwipeableCard */ = {
+			isa = PBXGroup;
+			children = (
+				1BF2FD0D20511CEC00BA552B /* CKJSwipeableCardViewDefine.h */,
+				1BF2FD0420511CA600BA552B /* CKJSwipeableCardView.h */,
+				1BF2FD0520511CA600BA552B /* CKJSwipeableCardView.m */,
+				1BF2FD0720511CBC00BA552B /* CKJSwipeableCardViewCell.h */,
+				1BF2FD0820511CBC00BA552B /* CKJSwipeableCardViewCell.m */,
+				1BF2FD0A20511CD600BA552B /* CKJSwipeableCardViewLayout.h */,
+				1BF2FD0B20511CD600BA552B /* CKJSwipeableCardViewLayout.m */,
+			);
+			path = SwipeableCard;
+			sourceTree = "<group>";
+		};
+		1BF2FCF82050E38900BA552B /* Demo */ = {
+			isa = PBXGroup;
+			children = (
+				1BF2FD292051320300BA552B /* ThirdParty */,
+				1BF2FCF92050E39900BA552B /* DemoViewController.h */,
+				1BF2FCFA2050E39900BA552B /* DemoViewController.m */,
+				1BF2FD1420511D6800BA552B /* SimpleModel.h */,
+				1BF2FD1520511D6800BA552B /* SimpleModel.m */,
+				1BF2FD1720511D7700BA552B /* SimpleCardViewCell.h */,
+				1BF2FD1820511D7700BA552B /* SimpleCardViewCell.m */,
+				1BF2FD392051592C00BA552B /* UIView+Convenience.h */,
+				1BF2FD382051592B00BA552B /* UIView+Convenience.m */,
+			);
+			path = Demo;
+			sourceTree = "<group>";
+		};
+		1BF2FD292051320300BA552B /* ThirdParty */ = {
+			isa = PBXGroup;
+			children = (
+				1BF2FD2A2051320300BA552B /* Reachability.h */,
+				1BF2FD2B2051320300BA552B /* Reachability.m */,
+				1BF2FD2D2051326F00BA552B /* FFNetworkReachability.h */,
+				1BF2FD2E2051326F00BA552B /* FFNetworkReachability.m */,
+			);
+			path = ThirdParty;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		1BF2FCAD2050E08200BA552B /* SwipeableCard */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1BF2FCC42050E08200BA552B /* Build configuration list for PBXNativeTarget "SwipeableCard" */;
+			buildPhases = (
+				1BF2FCAA2050E08200BA552B /* Sources */,
+				1BF2FCAB2050E08200BA552B /* Frameworks */,
+				1BF2FCAC2050E08200BA552B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SwipeableCard;
+			productName = SwipeableCard;
+			productReference = 1BF2FCAE2050E08200BA552B /* SwipeableCard.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		1BF2FCA62050E08200BA552B /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0910;
+				ORGANIZATIONNAME = ckj;
+				TargetAttributes = {
+					1BF2FCAD2050E08200BA552B = {
+						CreatedOnToolsVersion = 9.1;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 1BF2FCA92050E08200BA552B /* Build configuration list for PBXProject "SwipeableCard" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 1BF2FCA52050E08200BA552B;
+			productRefGroup = 1BF2FCAF2050E08200BA552B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				1BF2FCAD2050E08200BA552B /* SwipeableCard */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		1BF2FCAC2050E08200BA552B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1BF2FCE92050E33200BA552B /* image_1.jpg in Resources */,
+				1BF2FCED2050E33200BA552B /* like_btn@3x.png in Resources */,
+				1BF2FCF62050E33200BA552B /* dislike_postmark@3x.png in Resources */,
+				1BF2FCF42050E33200BA552B /* image_7.jpg in Resources */,
+				1BF2FCF52050E33200BA552B /* image_2.jpg in Resources */,
+				1BF2FCEF2050E33200BA552B /* like_postmark@3x.png in Resources */,
+				1BF2FCD42050E0B000BA552B /* Assets.xcassets in Resources */,
+				1BF2FD2820512EDC00BA552B /* image_0.jpg in Resources */,
+				1BF2FCEE2050E33200BA552B /* image_3.jpg in Resources */,
+				1BF2FCEA2050E33200BA552B /* image_6.jpg in Resources */,
+				1BF2FCD62050E0B000BA552B /* Main.storyboard in Resources */,
+				1BF2FCF22050E33200BA552B /* image_4.jpg in Resources */,
+				1BF2FCD52050E0B000BA552B /* LaunchScreen.storyboard in Resources */,
+				1BF2FCF12050E33200BA552B /* image_5.jpg in Resources */,
+				1BF2FCF32050E33200BA552B /* dislike_btn@3x.png in Resources */,
+				1BF2FCEC2050E33200BA552B /* image_9.jpg in Resources */,
+				1BF2FCD72050E0B000BA552B /* Info.plist in Resources */,
+				1BF2FCEB2050E33200BA552B /* image_8.jpg in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		1BF2FCAA2050E08200BA552B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1BF2FD3A2051592C00BA552B /* UIView+Convenience.m in Sources */,
+				1BF2FD1620511D6800BA552B /* SimpleModel.m in Sources */,
+				1BF2FD0C20511CD600BA552B /* CKJSwipeableCardViewLayout.m in Sources */,
+				1BF2FD2C2051320400BA552B /* Reachability.m in Sources */,
+				1BF2FCFB2050E39900BA552B /* DemoViewController.m in Sources */,
+				1BF2FCD82050E0B000BA552B /* main.m in Sources */,
+				1BF2FD0920511CBC00BA552B /* CKJSwipeableCardViewCell.m in Sources */,
+				1BF2FD0620511CA600BA552B /* CKJSwipeableCardView.m in Sources */,
+				1BF2FD2F2051327000BA552B /* FFNetworkReachability.m in Sources */,
+				1BF2FD1920511D7700BA552B /* SimpleCardViewCell.m in Sources */,
+				1BF2FCD32050E0B000BA552B /* AppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		1BF2FCCB2050E0B000BA552B /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1BF2FCCC2050E0B000BA552B /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		1BF2FCCD2050E0B000BA552B /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1BF2FCCE2050E0B000BA552B /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		1BF2FCC22050E08200BA552B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		1BF2FCC32050E08200BA552B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		1BF2FCC52050E08200BA552B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = "";
+				INFOPLIST_FILE = SwipeableCardDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.ckj.SwipeableCard;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		1BF2FCC62050E08200BA552B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = "";
+				INFOPLIST_FILE = SwipeableCardDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.ckj.SwipeableCard;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1BF2FCA92050E08200BA552B /* Build configuration list for PBXProject "SwipeableCard" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1BF2FCC22050E08200BA552B /* Debug */,
+				1BF2FCC32050E08200BA552B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1BF2FCC42050E08200BA552B /* Build configuration list for PBXNativeTarget "SwipeableCard" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1BF2FCC52050E08200BA552B /* Debug */,
+				1BF2FCC62050E08200BA552B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 1BF2FCA62050E08200BA552B /* Project object */;
+}
