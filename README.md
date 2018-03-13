@@ -70,6 +70,10 @@ The protocol CKJSwipeableCardViewDelegate represents the display and behaviour o
 ```
 ## What does it look like
 
+<img src="https://github.com/chenkaijie4ever/SwipeableCard/blob/master/ScreenShot/1.gif" width="371" />
+<img src="https://github.com/chenkaijie4ever/SwipeableCard/blob/master/ScreenShot/2.gif" width="371" />
+<img src="https://github.com/chenkaijie4ever/SwipeableCard/blob/master/ScreenShot/3.gif" width="371" />
+<img src="https://github.com/chenkaijie4ever/SwipeableCard/blob/master/ScreenShot/4.gif" width="371" />
 
 ## Author
 
