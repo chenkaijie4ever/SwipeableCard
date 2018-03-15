@@ -101,7 +101,7 @@ typedef NS_OPTIONS(NSUInteger, AlertType) {
 
 - (void)swipeableCardView:(CKJSwipeableCardView *)swipeableCardView swipeableCardViewCell:(CKJSwipeableCardViewCell *)swipeableCardViewCell draggingWidthDirection:(CKJSwipeableCardViewSwipeDirection)direction horizontalTranslateRatio:(CGFloat)horizontalTranslateRatio verticalTranslateRatio:(CGFloat)verticalTranslateRatio isManual:(BOOL)isManual {
     
-    CGFloat ratio = fmin(fabs(horizontalTranslateRatio), DEFAULT_TRIGGER_RATIO) / DEFAULT_TRIGGER_RATIO;
+    CGFloat ratio = fmin(fabs(horizontalTranslateRatio), DEFAULT_NORMAL_TRIGGER_RATIO) / DEFAULT_NORMAL_TRIGGER_RATIO;
     CGFloat scale = 1 - ratio * 0.15;
     if (direction == CKJSwipeableCardViewSwipeDirectionLeft) {
         _disLikeButton.transform = CGAffineTransformMakeScale(scale, scale);
@@ -227,7 +227,7 @@ typedef NS_OPTIONS(NSUInteger, AlertType) {
     if (_isFetchingMore) return;
     _isFetchingMore = YES;
     
-    dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(3 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
+    dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(2 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
         
         NSMutableArray <SimpleModel *> *fakeData = [NSMutableArray array];
         NSInteger currentCount = _dataSources.count;

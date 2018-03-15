@@ -160,7 +160,7 @@
         case UIGestureRecognizerStateChanged: {
             CGPoint translateDelta = [gesture translationInView:self];
             cell.center = CGPointMake(cell.center.x + translateDelta.x, cell.center.y + translateDelta.y);
-            cell.transform = CGAffineTransformRotate(cell.originalTransform, horizontalTranslateRatio / _layout.triggerRatio * _layout.maxRotateAngle);
+            cell.transform = CGAffineTransformRotate(cell.originalTransform, horizontalTranslateRatio / _layout.normalTriggerRatio * _layout.maxRotateAngle);
             [gesture setTranslation:CGPointZero inView:self];
             
             if (horizontalTranslateRatio > 0) {
@@ -179,9 +179,12 @@
         }
             break;
         case UIGestureRecognizerStateEnded: {
-            BOOL isDisappear = (fabs(horizontalTranslateRatio) >= _layout.triggerRatio);
-            if (isDisappear && [_delegate respondsToSelector:@selector(swipeableCardViewShouldPerformOperation:)]) {
-                isDisappear = [_delegate swipeableCardViewShouldPerformOperation:_currentSwipeDirection];
+            BOOL isDisappear = NO;
+            // If move fast, trigger easily
+            if (fabs([gesture velocityInView:self.superview].x) > 400) {
+                isDisappear = (fabs(horizontalTranslateRatio) >= _layout.fastTriggerRatio);
+            } else {
+                isDisappear = (fabs(horizontalTranslateRatio) >= _layout.normalTriggerRatio);
             }
             
             [self finishedPanGesture:cell direction:_currentSwipeDirection isDisappear:isDisappear];
@@ -200,7 +203,7 @@
 - (void)adjustVisibleCells:(CGFloat)horizontalTranslateRatio {
     
     CGFloat scaleInterval = _layout.tierScaleInterval;
-    CGFloat ratio = fmin(fabs(horizontalTranslateRatio), _layout.triggerRatio) / _layout.triggerRatio;
+    CGFloat ratio = fmin(fabs(horizontalTranslateRatio), _layout.normalTriggerRatio) / _layout.normalTriggerRatio;
     CGFloat scaleDelta = scaleInterval * ratio;
     CGFloat verticalTranslateDelta = _layout.tierSpacing * ratio;
     
@@ -222,7 +225,7 @@
         CGFloat factor = (direction == CKJSwipeableCardViewSwipeDirectionLeft ? -1 : 1);
         [UIView animateWithDuration:0.5f
                               delay:0.0
-                            options:UIViewAnimationOptionCurveLinear | UIViewAnimationOptionAllowUserInteraction
+                            options:UIViewAnimationOptionCurveEaseIn | UIViewAnimationOptionAllowUserInteraction
                          animations:^{
                              cell.center = CGPointMake(CGRectGetWidth(self.bounds) * (factor * 2 + 0.5), _baseCellCenter.y);
                          } completion:^(BOOL finished) {

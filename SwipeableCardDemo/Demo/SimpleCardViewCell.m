@@ -130,6 +130,9 @@
         }
         _preDirection = direction;
     } else {
+        BOOL isFinish = (direction != CKJSwipeableCardViewSwipeDirectionDefault && horizontalTranslateRatio == 0);
+        if (isFinish) return;
+        
         static CGFloat threshold = 0.05f;
         if (horizontalTranslateRatio <= -threshold) {
             direction = CKJSwipeableCardViewSwipeDirectionLeft;

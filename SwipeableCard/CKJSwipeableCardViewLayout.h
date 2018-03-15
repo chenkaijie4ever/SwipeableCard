@@ -12,7 +12,8 @@
 
 @property (nonatomic, assign) NSUInteger tierCount;
 
-@property (nonatomic, assign) CGFloat triggerRatio;
+@property (nonatomic, assign) CGFloat fastTriggerRatio;
+@property (nonatomic, assign) CGFloat normalTriggerRatio;
 @property (nonatomic, assign) CGFloat maxRotateAngle;
 
 @property (nonatomic, assign) CGFloat tierScaleInterval;

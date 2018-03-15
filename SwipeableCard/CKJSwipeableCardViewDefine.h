@@ -10,7 +10,8 @@
 #define CKJSwipeableCardViewDefine_h
 
 #define DEFAULT_TIER_COUNT              3
-#define DEFAULT_TRIGGER_RATIO           0.8f
+#define DEFAULT_FAST_TRIGGER_RATIO      0.15f
+#define DEFAULT_NORMAL_TRIGGER_RATIO    0.8f
 #define DEFAULT_MAX_ROTATE_ANGLE        (M_PI_4 / 5)
 #define DEFAULT_TIER_SCALE_INTERVAL     0.05f
 #define DEFAULT_TIER_SPACING            8.0f

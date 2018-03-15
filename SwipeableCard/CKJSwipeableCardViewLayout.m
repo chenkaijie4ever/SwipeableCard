@@ -16,7 +16,8 @@
     self = [super init];
     if (self) {
         _tierCount = DEFAULT_TIER_COUNT;
-        _triggerRatio = DEFAULT_TRIGGER_RATIO;
+        _fastTriggerRatio = DEFAULT_FAST_TRIGGER_RATIO;
+        _normalTriggerRatio = DEFAULT_NORMAL_TRIGGER_RATIO;
         _maxRotateAngle = DEFAULT_MAX_ROTATE_ANGLE;
         _tierScaleInterval = DEFAULT_TIER_SCALE_INTERVAL;
         _tierSpacing = DEFAULT_TIER_SPACING;
@@ -32,8 +33,11 @@
     
     _tierCount = MAX(_tierCount, 1);
     
-    _triggerRatio = fmax(0, _triggerRatio);
-    _triggerRatio = fmin(1.0f , _triggerRatio);
+    _fastTriggerRatio = fmax(0, _fastTriggerRatio);
+    _fastTriggerRatio = fmin(1.0f , _fastTriggerRatio);
+    
+    _normalTriggerRatio = fmax(0, _normalTriggerRatio);
+    _normalTriggerRatio = fmin(1.0f , _normalTriggerRatio);
     
     _tierScaleInterval = fmax(0, _tierScaleInterval);
     _tierScaleInterval = fmin(1.0f / _tierCount, _tierScaleInterval);
@@ -59,7 +63,8 @@
     
     CKJSwipeableCardViewLayout *layout = [[[self class] allocWithZone:zone] init];
     layout.tierCount = self.tierCount;
-    layout.triggerRatio = self.triggerRatio;
+    layout.fastTriggerRatio = self.fastTriggerRatio;
+    layout.normalTriggerRatio = self.normalTriggerRatio;
     layout.maxRotateAngle = self.maxRotateAngle;
     layout.tierScaleInterval = self.tierScaleInterval;
     layout.tierSpacing = self.tierSpacing;
